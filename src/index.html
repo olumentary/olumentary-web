@@ -22,7 +22,7 @@ title: 'Home'
     <div class="mx-auto mt-4 max-w-2xl lg:mt-8 lg:max-w-none">
       <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-4 lg:max-w-none lg:grid-cols-3">
         <% for service in site.data.services %>
-        <div class="flex flex-col p-6 rounded-lg shadow-md hover:bg-primary-100 border border-primary-200">
+        <div class="flex flex-col p-6 rounded-lg shadow-md hover:bg-primary-100 border border-primary-200 border-opacity-50">
           <dt class="flex items-center gap-x-3 text-xl font-semibold leading-7 text-gray-900"><%= service.name %></dt>
           <dd class="mt-2 flex flex-auto flex-col text-base leading-7 text-gray-600">
             <p class="flex-auto"><%= service.description %></p>
