@@ -10,7 +10,10 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       primary: colors.indigo,
-      secondary: colors.zinc,
+      secondary: colors.gray,
+      gray: colors.gray,
+      indigo: colors.indigo,
+      orange: colors.amber,
       accent: colors.teal,
       danger: colors.rose,
       midnight: {

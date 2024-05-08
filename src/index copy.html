@@ -1,0 +1,51 @@
+---
+layout: default
+title: 'Home'
+---
+
+<section class="h-1/2 bg-hero-background bg-cover bg-center bg-primary-900 bg-blend-multiply bg-opacity-60">
+  <div class="flex items-center h-full py-4 o-container">
+    <div>
+      <h1 class="text-5xl text-white font-bold mb-4"><%= site.metadata.tagline %></h1>
+      <p class="text-white lg:w-1/2 mb-4"><%= site.metadata.description %></p>
+      <a href="contact"><button type="button" class="btn btn-primary">Contact</button></a>
+    </div>
+  </div>
+</section>
+
+<section class="bg-secondary-900 py-16 flex flex-col">
+  <div class="o-container">
+    <div class="mx-auto max-w-2xl lg:text-center">
+      <h2 class="text-base font-semibold leading-7 text-primary-300">Our services</h2>
+      <p class="text-3xl font-bold tracking-tight text-white sm:text-4xl">We'll bring your ideas to life</p>
+    </div>
+    <div class="mx-auto mt-4 max-w-2xl lg:mt-8 lg:max-w-none">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-4 lg:max-w-none lg:grid-cols-3">
+        <% for service in site.data.services %>
+        <div class="flex flex-col p-6 rounded-lg shadow-md text-primary-300 hover:text-primary-100 hover:bg-primary-900 border border-primary-200 border-opacity-50">
+          <dt class="flex items-center gap-x-3 text-xl font-semibold leading-7"><%= service.name %></dt>
+          <dd class="mt-2 flex flex-auto flex-col text-base leading-7 text-secondary-100">
+            <p class="flex-auto"><%= service.description %></p>
+          </dd>
+        </div>
+        <% end %>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="bg-white py-16">
+  <div class="o-container">
+    <div class="mx-auto max-w-3xl lg:text-center">
+      <h2 class="text-base font-semibold leading-7 text-primary-700">You're in good company!</h2>
+      <p class="text-2xl font-bold tracking-tight text-secondary-900 sm:text-3xl">We partner with businesses of all sizes</p>
+    </div>
+    <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="images/mgf_logo.jpg" alt="Mill Gap Farms" width="158" height="48" />
+      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="images/mt_logo.png" alt="Musictoday" width="158" height="48" />
+      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="images/winnow_logo.jpeg" alt="Winnow" width="158" height="48" />
+      <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="images/mm_logo.svg" alt="Morgan & Morgan" width="158" height="48" />
+      <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="images/ateam_logo.svg" alt="a.team" width="158" height="48" />
+    </div>
+  </div>
+</section>
