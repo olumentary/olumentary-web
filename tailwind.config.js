@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -10,22 +11,27 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       primary: colors.indigo,
-      secondary: colors.gray,
+      secondary: colors.orange,
       gray: colors.gray,
       indigo: colors.indigo,
-      orange: colors.amber,
+      amber: colors.amber,
       accent: colors.teal,
       danger: colors.rose,
-      midnight: {
-        100: '#edf1fc',
-        700: '#222c42',
-        900: '#0f172a',
-      },
     },
     extend: {
       backgroundImage: {
         'hero-background': "url('/images/hero.jpg')",
       },
+    },
+    fontFamily: {
+      sans: [
+        '"Inter"',
+        {
+          fontFeatureSettings: '"cv11", "ss01"',
+          fontVariationSettings: '"opsz" 32',
+        },
+        ...defaultTheme.fontFamily.sans,
+      ],
     },
   },
   plugins: [require('@tailwindcss/forms')],
