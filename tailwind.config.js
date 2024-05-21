@@ -27,7 +27,7 @@ module.exports = {
       sans: [
         '"Inter"',
         {
-          fontFeatureSettings: '"cv11", "ss01"',
+          // fontFeatureSettings: '"cv11", "ss01"',
           fontVariationSettings: '"opsz" 32',
         },
         ...defaultTheme.fontFamily.sans,
